@@ -1,7 +1,7 @@
 # demo_oye_rickshaw
 - API Documentation - https://documenter.getpostman.com/view/5241834/T1DmDJfR?version=latest
 
-# Steps to run the aplication:-
+# Steps to run the application:-
 - clone the project - ```git clone https://github.com/Raj160907/demo_oye_rickshaw.git```<br/>
 - create and start a virtual environment - ```virtualenv env -p python3```</br>
 - Activate virtual environment - ```source env/bin/activate```<br/>
