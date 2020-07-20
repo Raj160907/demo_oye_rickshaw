@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
-from .models import *
+from accounts_locations.models import *
+from locations.models import *
+from rickshaw.models import *
 
 User = get_user_model()
 
@@ -21,17 +23,17 @@ class UserDetailSerializer(serializers.ModelSerializer):
         return obj.user_locations_id.last().user_locations.y
 
     def rickshaw_number_dt(self, obj):
-        if obj.user_type == 2:
-            return obj.user_rickshaw_id.filter(status=True).last().rickshaw_number
+        if obj.user_rickshaw.filter(status=True).exists():
+            return obj.user_rickshaw.filter(status=True).last().rickshaw_number
         else:
-            return "I am a Rider"
-
+            return ""
 
 class UserLocationSerializer(serializers.ModelSerializer):
     user = UserDetailSerializer()
     class Meta:
         model = UserLocation
         fields = ('id', 'user', 'user_locations', 'status')
+
 
 class DriverRickshawSerializer(serializers.ModelSerializer):
     user = UserDetailSerializer()

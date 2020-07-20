@@ -45,6 +45,9 @@ INSTALLED_APPS = [
     'django.contrib.gis',
     'rest_framework_gis',
     'accounts_locations',
+    'api',
+    'locations',
+    'rickshaw'
 ]
 SITE_ID = 1
 MIDDLEWARE = [

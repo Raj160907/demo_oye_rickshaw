@@ -9,5 +9,5 @@ from django.views.decorators.csrf import csrf_exempt
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^user/', include('accounts_locations.urls')),
+    url(r'^api/', include('api.urls')),
 ]
