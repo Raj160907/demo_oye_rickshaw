@@ -2,11 +2,11 @@
 - API Documentation - https://documenter.getpostman.com/view/5241834/T1DmDJfR?version=latest
 
 # Steps to run the aplication:-
-- clone the project - ```git clone https://github.com/Raj160907/demo_oye_rickshaw.git)```<br/>
+- clone the project - ```git clone https://github.com/Raj160907/demo_oye_rickshaw.git```<br/>
 - create and start a virtual environment - ```virtualenv env -p python3```</br>
-- Activate virtual environment - ```source env/bin/activate)```<br/>
+- Activate virtual environment - ```source env/bin/activate```<br/>
 - Install the project dependencies: - 
-```pip install -r requirements.txt)``` <br/>
+```pip install -r requirements.txt``` <br/>
 - create a postgres db and add the credentials to settings.py - <br/>
 ```sh
 DATABASES = {
@@ -16,7 +16,7 @@ DATABASES = {
         'USER': 'username',
         'PASSWORD': 'userpassword',
         'HOST': 'localhost',
-        'PORT': '',
+        'PORT': '5432',
     }
 }
 ```
