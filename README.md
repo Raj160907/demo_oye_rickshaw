@@ -2,12 +2,12 @@
 - API Documentation - https://documenter.getpostman.com/view/5241834/T1DmDJfR?version=latest
 
 # Steps to run the aplication:-
-1- clone the project - ```git clone https://github.com/Raj160907/demo_oye_rickshaw.git)```<br/>
-2- create and start a virtual environment - ```virtualenv env -p python3```</br>
-3- Activate virtual environment - ```source env/bin/activate)```<br/>
-4- Install the project dependencies: - 
+- clone the project - ```git clone https://github.com/Raj160907/demo_oye_rickshaw.git)```<br/>
+- create and start a virtual environment - ```virtualenv env -p python3```</br>
+- Activate virtual environment - ```source env/bin/activate)```<br/>
+- Install the project dependencies: - 
 ```pip install -r requirements.txt)``` <br/>
-5- create a postgres db and add the credentials to settings.py - <br/>
+- create a postgres db and add the credentials to settings.py - <br/>
 ```sh
 DATABASES = {
     'default': {
@@ -20,13 +20,12 @@ DATABASES = {
     }
 }
 ```
-6- connect to your database and run following command -
+- connect to your database and run following command -
 ```sh
 CREATE EXTENSION postgis;
 CREATE EXTENSION postgis_topology;
 ```
-
-7- update database engine -<br/>
+- update database engine -<br/>
 ```sh
 DATABASES = {
     'default': {
@@ -36,9 +35,9 @@ DATABASES = {
 }
 ```
 ```sh
-8- python manage.py makemigrations
-9- python manage.py migrate
-10-python manage.py runserver
+  python manage.py makemigrations
+  python manage.py migrate
+  python manage.py runserver
 ```
 
 # Approach
